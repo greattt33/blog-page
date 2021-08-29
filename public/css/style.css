@@ -1,0 +1,113 @@
+body{
+	margin:0px;
+	background-color:mint;
+	font-family:helvetica, sans-serif;
+}
+.container{
+	width:100vw;
+	height:100vh;
+}
+.navbar{
+    width:90vw;
+    height:auto;
+    display:grid;
+    grid-template-areas:"logo nav";
+    grid-template-rows:1fr;
+    grid-template-columns:auto 1fr;	
+	place-items:center;
+}
+.navbar-brand{
+	grid-area:"logo";
+	font-size:2em;
+	color:red;
+}
+.navbar-nav{
+	grid-area:"nav";
+}
+.nav-item{
+	display:inline;
+	padding-left:10px;
+	text-decoration:none;
+	
+}
+a{
+	text-decoration:none;
+}
+.nav-link{
+	color:green;
+}
+span{
+	position:relative;
+	left:80vw;
+}
+span>a:last-child{
+	border:1px solid green;
+	border-radius:5px;
+	background-color:green;
+	color:white;
+}
+span>a:first-child{
+	color:green;
+}
+button{
+	width:80px;height:30px;
+	background-color:blue;
+	color:white;
+	border:1px solid blue;
+	border-radius:5px;
+	margin-top:2vh;
+}
+button:hover{
+	background-color:white;
+	color:blue;
+}
+input{
+	width:40vw;
+	height:5vh;
+	border:1px solid green;
+	border-radius:5px;
+}
+textarea{
+	min-width:300px;
+	min-height:300px;
+	border:1px solid green;
+	border-radius:5px;
+}
+label{
+	display:block;
+	color:green;
+	font-size:0.8em;
+	padding-top:10px;
+}
+form{
+	display:grid;
+	place-items:center;
+}
+.sign-up{
+	display:grid;
+	place-items:center;
+}
+.sign-up>form>button>a{
+	color:white;
+}
+.sign-up>form>button>a:hover{
+	color:blue;
+}
+#post{
+	min-height:20vh;
+width:90vw;
+		background-color:white;
+		border:1px solid gray;
+		box-shadow:1px 1px 5px 5px gainsboro;
+
+}
+.content{
+	display:grid;
+	place-items:center;
+}
+#post>h1{
+	margin-left:20px;
+}
+#post>p{
+	margin-left:20px;
+}

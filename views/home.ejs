@@ -1,0 +1,17 @@
+	
+	<%- include("partials/header") -%>
+	
+	<span><a href="/sign-in">SIGN-IN</a> 
+	<a href="/sign-up">SIGN-UP</a></span>
+    <h1><%= HOME %></h1>
+	<div class="content">
+	<div id="post">
+	<% newBlog.forEach((post)=>{ %>
+				<h1><%=post.title%></h1>
+				<p><%= post.message.substring(0,100)+"..." %><a href="/post/<%=post.title%>">Read More</a></p>
+				<%}) %>
+	</div>
+	</div>
+	<%- include("partials/footer") -%>
+
+    

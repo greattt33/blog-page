@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<div class="sign-in">
+	<form action="/user" method="post">
+		<label for="name" required="yes"> FULL NAME</label>
+		<input type="text" name="name" autocomplete="off">
+		<label for="email"> Email</label>
+		<input type="Email" name="email">
+		<button>Sign in</button>
+	</form>
+</div>	
+<%- include("partials/footer") -%>
